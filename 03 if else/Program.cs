@@ -1,4 +1,6 @@
-﻿namespace _03_if_else
+﻿using System.Collections.Concurrent;
+
+namespace _03_if_else
 {
 	internal class Program
 	{
@@ -153,8 +155,40 @@
 			{
                 Console.WriteLine($"Your total is {totalAmount}");
             }
+			
+			// 8. Weekdays
 
+			Console.WriteLine("Enter a number (1-7) to find out the weekday:");
+			int weekNumber = int.Parse(Console.ReadLine());
 
+			if (weekNumber == 1)
+			{
+                Console.WriteLine("Monday");
+            } 
+			else if (weekNumber == 2)
+			{
+                Console.WriteLine("Tuesday");
+            }
+			else if (weekNumber == 3)
+			{
+				Console.WriteLine("Wednesday");
+			}
+			else if (weekNumber == 4)
+			{
+				Console.WriteLine("Thursday");
+			}
+			else if (weekNumber == 5)
+			{
+                Console.WriteLine("Friday");
+            }
+			else if (weekNumber == 6)
+			{
+                Console.WriteLine("Saturday");
+            }
+			else
+			{
+                Console.WriteLine("Sunday");
+            }
 			Console.ReadKey();
 
 
