@@ -41,7 +41,7 @@ namespace _03_if_else
 
 			// 3. Grade system
 
-			Console.WriteLine("Enter your test score:");
+			Console.WriteLine("Enter your test score to find out your grade:");
 			double userScore = double.Parse(Console.ReadLine());
 
             if (userScore >= 90 && userScore <= 100)
@@ -66,7 +66,7 @@ namespace _03_if_else
 			}
 			else
 			{
-				Console.WriteLine("invalid score");
+				Console.WriteLine("invalid score.");
 			}
 
 			// 4. Leap Year Checker
@@ -149,11 +149,11 @@ namespace _03_if_else
 				double discount = totalAmount * 0.1;
 				double discountPrice = totalAmount - discount;
 				
-                Console.WriteLine($"Your total with a discount of 10% is: {discountPrice}");
+                Console.WriteLine($"Your total with a discount of 10% is: {discountPrice}.");
             }
 			else
 			{
-                Console.WriteLine($"Your total is {totalAmount}");
+                Console.WriteLine($"Your total is: {totalAmount}.");
             }
 			
 			// 8. Weekdays
@@ -200,14 +200,31 @@ namespace _03_if_else
 
 			if (passwordInput == "CSharp123")
 			{
-                Console.WriteLine("Acces granted");
+                Console.WriteLine("Acces granted!");
             }
 			else
 			{
-                Console.WriteLine("Acces denied");
+                Console.WriteLine("Acces denied!");
             }
+			
 
+			Console.WriteLine("To convert from Fahrenheit to Celsius type FTC, from Celcius to Fahrenheit CTF:");
+			string userChoice = Console.ReadLine();
 
+			if (userChoice.ToUpper() == "FTC")
+			{
+                Console.WriteLine("Enter the temperature:");
+				double temperature = double.Parse(Console.ReadLine());
+				double convertedTemperaute = temperature / 2 - 30;
+                Console.WriteLine($"The temperature is{convertedTemperaute}");
+            }
+			else if (userChoice.ToUpper() == "CTF")
+			{
+                Console.WriteLine("Enter the temperature:");
+				double temperature = double.Parse(Console.ReadLine());
+				double convertedTemperature = temperature * 2 + 30;
+                Console.WriteLine($"The temperature is {convertedTemperature}");
+            }
             Console.ReadKey();
 
 
