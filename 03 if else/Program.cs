@@ -137,6 +137,24 @@
                 Console.WriteLine("Invalid. Enter a number.");
             }
 
+			//7. Discount System
+
+			Console.WriteLine("Enter the total amount of your purchase:");
+			double totalAmount = double.Parse(Console.ReadLine());
+
+			if (totalAmount > 1000)
+			{
+				double discount = totalAmount * 0.1;
+				double discountPrice = totalAmount - discount;
+				
+                Console.WriteLine($"Your total with a discount of 10% is: {discountPrice}");
+            }
+			else
+			{
+                Console.WriteLine($"Your total is {totalAmount}");
+            }
+
+
 			Console.ReadKey();
 
 
