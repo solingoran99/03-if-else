@@ -80,7 +80,35 @@
 			{
 				Console.WriteLine($"{userYear} is not leap year.");
 			}
-           
+
+			// 5. Maximum of Three
+
+			int num1;
+			int num2;
+			int num3;
+			int max;
+            Console.WriteLine("Enter three whole numbers to find out the biggest number.\nEnter the first number:");
+			num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number:");
+			num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number:");
+			num3 = int.Parse(Console.ReadLine());
+
+			if (num1 > num2 && num1 > num3)
+			{
+				max = num1;
+			}
+			else if (num2 > num1 && num2 > num3)
+			{
+				max = num2;
+			}
+			else
+			{
+				max = num3;
+			}
+            Console.WriteLine($"The biggest number is {max}");
             Console.ReadKey();
 
 
