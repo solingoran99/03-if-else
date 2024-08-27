@@ -8,7 +8,7 @@ namespace _03_if_else
 		{
 			//1. Even or Odd:
 
-			/*double userInput;
+			double userInput;
 			Console.WriteLine("Enter a number:");
 			userInput = double.Parse(Console.ReadLine());
 
@@ -189,7 +189,7 @@ namespace _03_if_else
 			{
                 Console.WriteLine("Sunday");
             }
-			*/
+			
 
 			// 9. Password Checker
 
