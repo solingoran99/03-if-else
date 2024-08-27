@@ -109,7 +109,35 @@
 				max = num3;
 			}
             Console.WriteLine($"The biggest number is {max}");
-            Console.ReadKey();
+
+			//6. Positive, Negative or Zero
+			
+			Console.WriteLine("Enter a number to find out if the number is positive, negative or zero:");
+			string input =(Console.ReadLine());
+
+			double userNum;
+
+			if(double.TryParse(input, out userNum))
+			{
+				if (userNum > 0)
+				{
+                    Console.WriteLine($"{userNum} is positive.");
+                }
+				else if (userNum < 0)
+				{
+                    Console.WriteLine($"{userNum} is negative");
+                }
+				else
+				{
+                    Console.WriteLine("Number is zero.");
+                }
+			}
+			else
+			{
+                Console.WriteLine("Invalid. Enter a number.");
+            }
+
+			Console.ReadKey();
 
 
 		}
