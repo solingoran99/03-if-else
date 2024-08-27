@@ -39,7 +39,7 @@
 
 			// 3. Grade system
 
-            Console.WriteLine("Enter your test score:");
+			Console.WriteLine("Enter your test score:");
 			double userScore = double.Parse(Console.ReadLine());
 
             if (userScore >= 90 && userScore <= 100)
@@ -66,6 +66,21 @@
 			{
 				Console.WriteLine("invalid score");
 			}
+
+			// 4. Leap Year Checker
+
+			Console.WriteLine("Enter a year:");
+			int userYear = int.Parse(Console.ReadLine());
+
+            if (userYear %4 == 0 && userYear != 100 || userYear %400 == 0)
+			{
+				Console.WriteLine($"{userYear} is a leap year.");
+			}
+			else
+			{
+				Console.WriteLine($"{userYear} is not leap year.");
+			}
+           
             Console.ReadKey();
 
 
